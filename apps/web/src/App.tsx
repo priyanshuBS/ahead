@@ -6,7 +6,9 @@ function App() {
   return (
     <>
       <Header />
-      <Outlet />
+      <main className="pt-[4.5rem] sm:pt-[5rem]">
+        <Outlet />
+      </main>
       <Footer />
     </>
   );
