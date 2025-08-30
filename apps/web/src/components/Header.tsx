@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import { useTheme } from "../hooks/useTheme";
 
 const navigation = [
-  { name: "Features", href: "#features" },
-  { name: "Pricing", href: "#pricing" },
-  { name: "About", href: "#about" },
-  { name: "Contact", href: "#contact" },
+  { name: "Features", href: "/features" },
+  { name: "Pricing", href: "/pricing" },
+  { name: "About", href: "/about" },
+  { name: "Contact", href: "/contact" },
 ];
 
 const Header: React.FC = () => {
@@ -47,7 +47,7 @@ const Header: React.FC = () => {
         {/* Dark Mode Toggle */}
         <button
           onClick={toggleTheme}
-          className="p-2 rounded-full bg-gray-200 dark:bg-gray-800 text-black dark:text-white transition-colors duration-300 cursor-pointer relative -top-[2px]"
+          className="p-2 rounded-full bg-gray-200 dark:bg-gray-800 text-black dark:text-white transition-colors duration-300 cursor-pointer relative -top-[2px] sm:top-0"
           aria-label="Toggle dark mode"
         >
           {theme === "dark" ? (
